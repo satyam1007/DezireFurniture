@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - DezireFurniture</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="/images/logo.jpeg">
+  <style>
+    .active {
+      background-color: #e2e8f0;
+      /* Tailwind's gray-200 */
+    }
+
+    .nav-link:hover {
+      background-color: #f7fafc;
+      /* Tailwind's gray-100 */
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <img src="/images/logo.jpeg" alt="logo" class="rounded-full" width="50px">
+          <a href="/index.html" class="font-bold text-lg text-gray-800">DezireFurniture</a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:block">
+          <ul class="ml-4 flex space-x-4">
+            <li><a href="/index.html" class="text-gray-800 nav-link py-2 px-4 rounded duration-150">Home</a></li>
+            <li><a href="#" class="text-gray-800 nav-link py-2 px-4 rounded duration-150 active">Products</a></li>
+            <li><a href="/about.html" class="text-gray-800 nav-link py-2 px-4 rounded duration-150">About</a></li>
+            <li><a href="/contact.html" class="text-gray-800 nav-link py-2 px-4 rounded duration-150">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Menu Button (Hamburger) -->
+        <div class="flex md:hidden items-center">
+          <button type="button"
+            class="bg-gray-200 p-2 rounded-md text-gray-800 hover:text-gray-600 focus:outline-none focus:ring"
+            id="mobile-menu-button">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div class="md:hidden mt-3 px-2 hidden" id="mobile-menu">
+    <ul class="space-y-2">
+      <li><a href="/index.html" class="block px-4 py-2 bg-white text-gray-800 font-medium rounded-md shadow-lg">Home</a>
+      </li>
+      <li><a href="#"
+          class="block px-4 py-2 bg-white text-gray-800 font-medium rounded-md shadow-lg active">Products</a></li>
+      <li><a href="/about.html"
+          class="block px-4 py-2 bg-white text-gray-800 font-medium rounded-md shadow-lg">About</a></li>
+      <li><a href="/contact.html"
+          class="block px-4 py-2 bg-white text-gray-800 font-medium rounded-md shadow-lg mb-4">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Product Details Page Content -->
+  <div class="mt-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/productssofa.webp" alt="New Sofa" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Modern Sofa</h3>
+        <p class="mt-2">Comfortable and stylish modern sofa perfect for any living room.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/sofa.webp" alt="New Sofa" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Modern Sofa</h3>
+        <p class="mt-2">Comfortable and stylish modern sofa perfect for any living room.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/chairsofa_1.jpg" alt="New Chair Sofa" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Stylish Chair Sofa</h3>
+        <p class="mt-2">Upgrade your living space with this stylish chair sofa, offering both comfort and sophistication
+          to your home.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/chairsofa_2.jpeg" alt="New Chair Sofa" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Modern Chair Sofa</h3>
+        <p class="mt-2">Enhance your living space with this modern chair sofa, combining sleek design with comfort for a
+          contemporary feel.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/chairsofa_3.jpg" alt="New Chair Sofa" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Comfortable Chair Sofa</h3>
+        <p class="mt-2">Indulge in comfort and style with this inviting chair sofa, perfect for relaxing evenings in
+          your cozy living space.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/chairsofa_4.jpeg" alt="New Chair Sofa" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Classic Chair Sofa</h3>
+        <p class="mt-2">Add timeless elegance to your living space with this classic chair sofa, offering both style and
+          comfort for your home.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/diningtableset.jpeg" alt="New Dining Table" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Dining Table Set</h3>
+        <p class="mt-2">Elegant dining table set that brings sophistication to your dining area.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/diningtable_1.jpeg" alt="New Dining Table" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Elegant Dining Table</h3>
+        <p class="mt-2">Upgrade your dining area with this elegant dining table, perfect for hosting gatherings and
+          adding style to your home.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/diningtable_2.jpeg" alt="New Dining Table" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Elegant Dining Table</h3>
+        <p class="mt-2">Upgrade your dining area with this elegant dining table, perfect for hosting gatherings and
+          adding style to your home.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/bed_1.webp" alt="New Bed" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Luxurious Bedroom Set</h3>
+        <p class="mt-2">Create a serene and stylish retreat in your bedroom with this luxurious bedroom furniture set,
+          crafted to offer both comfort and sophistication for a restful sleep experience.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/bed_2.jpeg" alt="New Bed" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Modern Bedroom Set</h3>
+        <p class="mt-2">Upgrade your bedroom with this modern bedroom furniture set, designed to blend style and
+          functionality for a comfortable and contemporary sleeping space.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/entrywayfurniture.jpeg" alt="Entryway Furniture" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Entryway Furniture</h3>
+        <p class="mt-2">Stylish, functional storage and seating options in modern, rustic, or classic designs, welcoming
+          guests with flair.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/Officefurniture.jpeg" alt="Office Furniture" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Office Furniture</h3>
+        <p class="mt-2">Ergonomic, stylish office furniture for productive workspaces, enhancing comfort and efficiency.
+        </p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/bathroomfurniture.webp" alt="Bathroom" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Bathroom Furniture</h3>
+        <p class="mt-2">Elegant, space-saving bathroom furniture for organized and stylish washrooms.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="/images/bathroom.jpeg" alt="Bathroom" class="rounded-t-lg object-cover"
+          style="width: 500px; height: 350px;">
+        <h3 class="text-xl font-bold mt-2">Chic Bathroom Furniture</h3>
+        <p class="mt-2">Upgrade your bathroom with our chic and space-saving furniture, designed to enhance organization
+          and style in your washroom.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 mt-10">
+    <div class="max-w-7xl mx-auto px-4 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- About Section -->
+        <div>
+          <h2 class="text-lg font-bold mb-4">About Us</h2>
+          <p class="text-sm">DezireFurniture is your ultimate destination for stylish and affordable furniture that
+            reflects your unique style. Our curated collections are designed to elevate your living spaces with quality
+            and elegance.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h2 class="text-lg font-bold mb-4">Quick Links</h2>
+          <ul class="text-sm space-y-2">
+            <li><a href="/index.html" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">Products</a></li>
+            <li><a href="/about.html" class="hover:underline">About</a></li>
+            <li><a href="/contact.html" class="hover:underline">Contact</a></li>
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div>
+          <h2 class="text-lg font-bold mb-4">Contact Us</h2>
+          <ul class="text-sm space-y-2">
+            <li><a href="mailto:info@dezirefurniture.com" class="hover:underline">info@dezirefurniture.com</a></li>
+            <li><a href="tel:+1234567890" class="hover:underline">+1 234 567 890</a></li>
+            <li><a href="#" class="hover:underline">123 Furniture St, City, Country</a></li>
+          </ul>
+
+          <!-- Social Media Links -->
+          <div class="mt-4">
+            <h2 class="text-lg font-bold mb-2">Follow Us</h2>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-gray-100">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22.46 6c-.77.35-1.6.58-2.46.69a4.16 4.16 0 001.84-2.3c-.83.5-1.76.85-2.75 1.05a4.13 4.13 0 00-7 3.77A11.7 11.7 0 012.2 4.9a4.13 4.13 0 001.28 5.5 4.07 4.07 0 01-1.88-.52v.05a4.14 4.14 0 003.3 4.05 4.2 4.2 0 01-1.86.07 4.15 4.15 0 003.87 2.87A8.28 8.28 0 012 18.4a11.68 11.68 0 006.29 1.84c7.55 0 11.67-6.26 11.67-11.67l-.01-.53A8.35 8.35 0 0024 4.59c-.82.36-1.7.6-2.62.7a4.2 4.2 0 001.84-2.3z" />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-gray-100">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19.54 2h-15a2.56 2.56 0 00-2.55 2.55v15a2.56 2.56 0 002.55 2.55h15a2.56 2.56 0 002.55-2.55v-15A2.56 2.56 0 0019.54 2zM8.27 18.07h-3v-8h3zm-1.51-9.08a1.73 1.73 0 110-3.46 1.73 1.73 0 010 3.46zm12.12 9.08h-3v-4.25c0-1.01-.02-2.3-1.4-2.3s-1.61 1.1-1.61 2.23v4.32h-3v-8h2.88v1.09h.04a3.16 3.16 0 012.85-1.57c3.05 0 3.62 2.01 3.62 4.62z" />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-gray-100">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.16c-5.46 0-9.87 4.41-9.87 9.87 0 4.43 3.6 8.1 8.23 9.48.6.1.82-.27.82-.6v-2.1c-3.34.73-4.03-1.44-4.03-1.44-.55-1.42-1.33-1.8-1.33-1.8-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.08 1.84 2.84 1.3 3.53.99.1-.8.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.92 0-1.3.46-2.38 1.23-3.23-.12-.3-.54-1.52.12-3.15 0 0 1.02-.32 3.34 1.23a11.66 11.66 0 013.04-.41c1.03 0 2.07.14 3.03.41 2.32-1.55 3.34-1.23 3.34-1.23.66 1.63.24 2.85.12 3.15.77.86 1.23 1.93 1.23 3.23 0 4.61-2.82 5.62-5.5 5.92.42.36.81 1.08.81 2.16v3.19c0 .33.23.71.82.6A9.86 9.86 0 0021.87 12c0-5.46-4.41-9.87-9.87-9.87z" />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-gray-100">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M16 8a6 6 0 11-6-6 6 6 0 016 6zm-2 0a4 4 0 10-4 4 4 4 0 004-4zm7.92 10.75a8.74 8.74 0 00-3.57-5.43 10.64 10.64 0 00-6.25-2.32 10.64 10.64 0 00-6.25 2.32 8.74 8.74 0 00-3.57 5.43 1.62 1.62 0 00.4 1.36 1.74 1.74 0 001.3.56h16.24a1.74 1.74 0 001.3-.56 1.62 1.62 0 00.4-1.36zM3.23 19.5a.53.53 0 01-.5-.53c.07-2.58 3.6-5.6 8.27-5.6s8.2 3 8.27 5.6a.53.53 0 01-.5.53z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-900 py-4">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p class="text-sm">&copy; 2024 DezireFurniture. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+
+</html>

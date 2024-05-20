@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - DezireFurniture</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="/images/logo.jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .active {
+      background-color: #e2e8f0;
+      /* Tailwind's gray-200 */
+    }
+
+    .nav-link:hover {
+      background-color: #f7fafc;
+      /* Tailwind's gray-100 */
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <img src="/images/logo.jpeg" alt="logo" class="rounded-full" width="50px">
+          <a href="/index.html" class="font-bold text-lg text-gray-800">DezireFurniture</a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:block">
+          <ul class="ml-4 flex space-x-4">
+            <li><a href="/index.html" class="text-gray-800 nav-link py-2 px-4 rounded duration-150">Home</a></li>
+            <li><a href="/products.html" class="text-gray-800 nav-link py-2 px-4 rounded duration-150">Products</a>
+            </li>
+            <li><a href="/about.html" class="text-gray-800 nav-link py-2 px-4 rounded duration-150">About</a></li>
+            <li><a href="#" class="text-gray-800 nav-link py-2 px-4 rounded duration-150 active">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Menu Button (Hamburger) -->
+        <div class="flex md:hidden items-center">
+          <button type="button"
+            class="bg-gray-200 p-2 rounded-md text-gray-800 hover:text-gray-600 focus:outline-none focus:ring"
+            id="mobile-menu-button">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div class="md:hidden mt-3 px-2 hidden" id="mobile-menu">
+    <ul class="space-y-2">
+      <li><a href="/index.html" class="block px-4 py-2 bg-white text-gray-800 font-medium rounded-md shadow-lg">Home</a>
+      </li>
+      <li><a href="/products.html"
+          class="block px-4 py-2 bg-white text-gray-800 font-medium rounded-md shadow-lg">Products</a></li>
+      <li><a href="/about.html"
+          class="block px-4 py-2 bg-white text-gray-800 font-medium rounded-md shadow-lg">About</a></li>
+      <li><a href="#"
+          class="block px-4 py-2 bg-white text-gray-800 font-medium rounded-md shadow-lg mb-4 active">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <main class="container mx-auto py-8 px-8 flex flex-wrap">
+    <section class="w-full md:w-1/2 mb-8 md:mb-0 pr-8">
+      <div class="bg-gray-100 p-6 rounded-lg">
+        <h2 class="text-2xl font-semibold mb-4">Contact Information</h2>
+        <div class="mb-4 leading-10">
+          <p class="text-gray-700 mb-2"><span class="font-semibold">Phone:</span> 123-456-7890</p>
+          <p class="text-gray-700 mb-2"><span class="font-semibold">Email:</span> info@example.com</p>
+          <p class="text-gray-700 mb-2"><span class="font-semibold">Address:</span> 123 Main Street, City, Country</p>
+        </div>
+        <div>
+          <p class="text-gray-700 mb-2"><span class="font-semibold">Follow us on social media:</span></p>
+          <div class="flex space-x-8 mt-5">
+            <a href="#" class="text-gray-400 text-3xl hover:text-blue-500 duration-300">
+              <i class=" fa-brands fa-square-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-400 text-3xl hover:text-red-500 duration-300">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-400 text-3xl hover:text-blue-500 duration-300">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full md:w-1/2 mb-8 md:mb-0">
+      <h2 class="text-2xl font-semibold mb-4">Contact Form</h2>
+      <form>
+        <div class="mb-4">
+          <label for="name" class="block mb-1">Name:</label>
+          <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-md" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block mb-1">Email:</label>
+          <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-md" required>
+        </div>
+        <div class="mb-4">
+          <label for="subject" class="block mb-1">Subject:</label>
+          <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border rounded-md" required>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block mb-1">Message:</label>
+          <textarea id="message" name="message" class="w-full px-4 py-2 border rounded-md" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Send
+          Message</button>
+      </form>
+    </section>
+  </main>
+  <section class="px-8 py-8">
+    <h2 class="text-2xl font-semibold mb-4">Our Location</h2>
+    <div class="w-full h-96">
+      <!-- Embedded map -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.6520745580633!2d75.71361867487059!3d29.174923359244968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3912331d2ea63895%3A0x7c87b90e0b8d6fc2!2sDezire%20Furniture!5e0!3m2!1sen!2sin!4v1716108009040!5m2!1sen!2sin"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" class="rounded"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 mt-10">
+    <div class="max-w-7xl mx-auto px-4 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- About Section -->
+        <div>
+          <h2 class="text-lg font-bold mb-4">About Us</h2>
+          <p class="text-sm">DezireFurniture is your ultimate destination for stylish and affordable furniture that
+            reflects your unique style. Our curated collections are designed to elevate your living spaces with quality
+            and elegance.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h2 class="text-lg font-bold mb-4">Quick Links</h2>
+          <ul class="text-sm space-y-2">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="/products.html" class="hover:underline">Products</a></li>
+            <li><a href="#" class="hover:underline">About</a></li>
+            <li><a href="/contact.html" class="hover:underline">Contact</a></li>
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div>
+          <h2 class="text-lg font-bold mb-4">Contact Us</h2>
+          <ul class="text-sm space-y-2">
+            <li><a href="mailto:info@dezirefurniture.com" class="hover:underline">info@dezirefurniture.com</a></li>
+            <li><a href="tel:+1234567890" class="hover:underline">+1 234 567 890</a></li>
+            <li><a href="#" class="hover:underline">123 Furniture St, City, Country</a></li>
+          </ul>
+
+          <!-- Social Media Links -->
+          <div class="mt-4">
+            <h2 class="text-lg font-bold mb-2">Follow Us</h2>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-gray-100">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22.46 6c-.77.35-1.6.58-2.46.69a4.16 4.16 0 001.84-2.3c-.83.5-1.76.85-2.75 1.05a4.13 4.13 0 00-7 3.77A11.7 11.7 0 012.2 4.9a4.13 4.13 0 001.28 5.5 4.07 4.07 0 01-1.88-.52v.05a4.14 4.14 0 003.3 4.05 4.2 4.2 0 01-1.86.07 4.15 4.15 0 003.87 2.87A8.28 8.28 0 012 18.4a11.68 11.68 0 006.29 1.84c7.55 0 11.67-6.26 11.67-11.67l-.01-.53A8.35 8.35 0 0024 4.59c-.82.36-1.7.6-2.62.7a4.2 4.2 0 001.84-2.3z" />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-gray-100">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19.54 2h-15a2.56 2.56 0 00-2.55 2.55v15a2.56 2.56 0 002.55 2.55h15a2.56 2.56 0 002.55-2.55v-15A2.56 2.56 0 0019.54 2zM8.27 18.07h-3v-8h3zm-1.51-9.08a1.73 1.73 0 110-3.46 1.73 1.73 0 010 3.46zm12.12 9.08h-3v-4.25c0-1.01-.02-2.3-1.4-2.3s-1.61 1.1-1.61 2.23v4.32h-3v-8h2.88v1.09h.04a3.16 3.16 0 012.85-1.57c3.05 0 3.62 2.01 3.62 4.62z" />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-gray-100">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.16c-5.46 0-9.87 4.41-9.87 9.87 0 4.43 3.6 8.1 8.23 9.48.6.1.82-.27.82-.6v-2.1c-3.34.73-4.03-1.44-4.03-1.44-.55-1.42-1.33-1.8-1.33-1.8-1.09-.75.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.08 1.84 2.84 1.3 3.53.99.1-.8.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.92 0-1.3.46-2.38 1.23-3.23-.12-.3-.54-1.52.12-3.15 0 0 1.02-.32 3.34 1.23a11.66 11.66 0 013.04-.41c1.03 0 2.07.14 3.03.41 2.32-1.55 3.34-1.23 3.34-1.23.66 1.63.24 2.85.12 3.15.77.86 1.23 1.93 1.23 3.23 0 4.61-2.82 5.62-5.5 5.92.42.36.81 1.08.81 2.16v3.19c0 .33.23.71.82.6A9.86 9.86 0 0021.87 12c0-5.46-4.41-9.87-9.87-9.87z" />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-gray-100">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M16 8a6 6 0 11-6-6 6 6 0 016 6zm-2 0a4 4 0 10-4 4 4 4 0 004-4zm7.92 10.75a8.74 8.74 0 00-3.57-5.43 10.64 10.64 0 00-6.25-2.32 10.64 10.64 0 00-6.25 2.32 8.74 8.74 0 00-3.57 5.43 1.62 1.62 0 00.4 1.36 1.74 1.74 0 001.3.56h16.24a1.74 1.74 0 001.3-.56 1.62 1.62 0 00.4-1.36zM3.23 19.5a.53.53 0 01-.5-.53c.07-2.58 3.6-5.6 8.27-5.6s8.2 3 8.27 5.6a.53.53 0 01-.5.53z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-900 py-4">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p class="text-sm">&copy; 2024 DezireFurniture. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+
+</html>
